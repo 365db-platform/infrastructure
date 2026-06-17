@@ -1,0 +1,36 @@
+# Terraform state — never commit these
+*.tfstate
+*.tfstate.backup
+*.tfstate.lock.info
+
+# Terraform working directory
+.terraform/
+.terraform.lock.hcl
+
+# Secrets — never commit terraform.tfvars
+terraform.tfvars
+*.auto.tfvars
+
+# Keep the example file
+!terraform.tfvars.example
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Override files (local developer overrides only)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# CLI config
+.terraformrc
+terraform.rc
+
+# Generated plan files
+*.tfplan
+tfplan
+
+# Local helper env with secrets (created by phase1_assisted.sh)
+.env.phase1.local

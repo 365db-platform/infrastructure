@@ -1,0 +1,17 @@
+akamai_iam_group.environments
+akamai_iam_role.security_auditor
+akamai_iam_role.network_engineer
+linode_object_storage_key.log_writer
+akamai_appsec_configuration.security_config
+akamai_appsec_security_policy.workload_policy
+linode_vpc.management_vpc
+linode_vpc.prod_vpc
+linode_vpc.dev_vpc
+linode_vpc.partner_vpc
+linode_vpc_subnet.management_subnet
+linode_vpc_subnet.prod_subnet
+linode_vpc_subnet.dev_subnet
+linode_vpc_subnet.partner_subnet
+linode_firewall.prod_firewall
+linode_firewall.sandbox_firewall
+linode_firewall.dev_firewall

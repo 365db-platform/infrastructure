@@ -1,0 +1,5 @@
+akamai_iam_group.environments
+akamai_iam_role.security_auditor
+akamai_iam_role.network_engineer
+akamai_appsec_configuration.security_config
+akamai_appsec_security_policy.workload_policy

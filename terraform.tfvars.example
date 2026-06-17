@@ -1,0 +1,28 @@
+# Copy this file to terraform.tfvars and fill in real values.
+# NEVER commit terraform.tfvars to version control — it is git-ignored.
+
+# --- Linode ---
+linode_api_token   = "YOUR_LINODE_PERSONAL_ACCESS_TOKEN"
+linode_access_key  = "YOUR_OBJ_STORAGE_ACCESS_KEY"   # from bootstrap.sh output
+linode_secret_key  = "YOUR_OBJ_STORAGE_SECRET_KEY"   # from bootstrap.sh output
+
+linode_region      = "us-east"
+linode_obj_cluster = "us-east-1"
+
+# --- Networking ---
+# Your current 365DB host IP — restrict SSH to this only.
+bastion_cidr               = "172.232.54.62/32"
+internal_lb_cidr           = "192.168.1.0/24"
+partner_integration_cidrs  = ["203.0.113.0/24"]  # replace with real partner CIDRs
+
+# --- IAM ---
+admin_users          = ["admin@company.com", "secops@company.com"]
+akamai_root_group_id = 12345   # replace with real root group ID from Control Center
+
+# --- Akamai AppSec ---
+# Keep Akamai disabled by default for Linode-only phases.
+enable_akamai                = false
+akamai_contract_id          = "YOUR_CONTRACT_ID"   # e.g. "ctr_1-XXXXX"
+akamai_group_id             = 67890                # numeric group ID
+akamai_host_names           = ["365daybookings.com"]
+security_notification_email = "security@365daybookings.com"
